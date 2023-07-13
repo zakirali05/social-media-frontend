@@ -1,13 +1,207 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root{
+  --bgcolor : #2c3036;
+  --postcolor : #202327;
+  --btncolor : #ab5dca;
+  --textcolor : #e1e9f0;
+  --navcolor : #242425;
+ 
+} */
+
+
+
+/* :root{
+  --bgcolor : #1c1830;
+  --postcolor : #252237;
+  --btncolor : #f9724c;
+  --textcolor : #e1e9f0;
+  --navcolor : #242425;
+  
+} */
+
+
+/* :root{
+  --bgcolor : #0f0b30;
+  --postcolor : #1a1a3c;
+  --btncolor : #fc2f7e;
+  --textcolor : #e1e9f0;
+  --navcolor : #242425;
+  
+} */
+
+ /* :root{
+  --bgcolor : #17181c;
+  --postcolor : #1e1f23;
+  --btncolor : #2d87fb;
+  --textcolor : #e1e9f0;
+  --navcolor : #242425;
+  
+}  */
+
+
+/* :root{
+  --bgcolor : #f3f2ef;
+  --postcolor : white;
+  --btncolor : #2d87fb;
+  --textcolor : #292929;
+  --navcolor : #242425;
+  
+} */
+
+:root{
+  --bgcolor : #000000;
+  --postcolor :#1d2226;
+  --btncolor : #7ce3b0;
+  --textcolor :#dfe0e1;
+  --navcolor : #242425;
+  
+}
+body{
+  overflow-x: hidden;
+ scroll-behavior: smooth;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  display: none;
 }
+
+div{
+  @apply rounded-md
+
+}
+
+/* .shadow{
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+} */
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+select:focus{
+  outline: none;
+}
+
+
+
+.customshadow{
+  box-shadow: 1px 1px 5px rgba(171, 93, 202,0.3) ;
+}
+
+.blureffect{
+   
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: saturate(180%) blur(10px);
+  
+}
+
+.slide{
+  transition: all 0.4s ease-in-out;
+}
+
+.slidein{
+/* left: 0%; */
+transform: translateX(0%);
+/* display: absolute; */
+}
+
+.slideout{
+/* left: 100% */
+transform: translateX(150%);
+/* display: none; */
+}
+
+
+
+.z{
+  z-index: 100000000000000;
+}
+.zl{
+  z-index: 10;
+}
+
+.gridd{
+  display: grid;
+  grid-template-columns: 28% auto 28%;
+}
+
+.text-grey{
+  color: gray;
+}
+
+.bordertb{
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.borderl{
+  border-left: 1px solid grey;
+}
+
+.borderr{
+  border-right: 1px solid grey;
+}
+
+#img{
+display: none;
+}
+
+#video{
+  display: none;
+}
+
+
+
+button{
+  @apply rounded-md
+}
+
+@media  screen and (max-width: 440px) {
+  .cuting{
+    left: 0;
+    right: 0;
+   
+  }
+  .cut{
+    width: 100vw;
+  }
+
+}
+
+input{
+  @apply rounded-md
+}
+
+
+form{
+  @apply rounded-md
+}
+
+/* .needed{
+  @apply flex-col gap-4
+} */
+
+@media screen and (max-width:460px){
+  .needed{
+  @apply flex-col gap-4
+}  
+.mainnnn{
+  font-size: small;
+}
+}
+
+@media screen and (max-width:590px){
+  .yes{
+    @apply flex-col gap-4
+  }
+  
+}
+
